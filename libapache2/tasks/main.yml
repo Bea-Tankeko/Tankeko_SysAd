@@ -1,0 +1,5 @@
+---
+- name: add PHP support for apache ubuntu
+  apt:
+    name: libapache2-mod-php 
+  when: ansible_distribution == "Ubuntu"
